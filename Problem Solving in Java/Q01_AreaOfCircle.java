@@ -1,7 +1,4 @@
-package basic.to.intermediate;
 
-public class Q01_AreaOfCircle {
-	
 	/**
 	 * Write a program to read the radius of a circle and calculate 
 	 * its area using the formula:
@@ -19,9 +16,11 @@ public class Q01_AreaOfCircle {
 	Area of Circle with Radius 7.0000 is 154.0000
 	 */
 	
-	
-	public static void main(String[] args) {
-		
-	}
-
+public class AreaOfCircle {
+    public static void main(String[] args) {
+        double radius = 5.0;
+        double area = Math.PI * radius * radius;
+        System.out.println("Area of Circle: " + area);
+    }
 }
+
