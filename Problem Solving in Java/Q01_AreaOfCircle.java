@@ -1,4 +1,17 @@
-	/**
+import java.util.Scanner;
+
+public class AreaOfCircle 
+{
+    public static void main(String[] args) 
+	{
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter radius of circle: ");
+        double radius = scanner.nextDouble();
+        double area = Math.PI * radius * radius;
+        System.out.println("Area of Circle: " + area);
+    }
+}
+/**
 	 * Write a program to read the radius of a circle and calculate 
 	 * its area using the formula:
 		A = π * r²
@@ -15,16 +28,6 @@
 	Area of Circle with Radius 7.0000 is 154.0000
 	 */
 
-import java.util.Scanner;
 
-public class AreaOfCircle {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter radius of circle: ");
-        double radius = scanner.nextDouble();
-        double area = Math.PI * radius * radius;
-        System.out.println("Area of Circle: " + area);
-    }
-}
 
 
