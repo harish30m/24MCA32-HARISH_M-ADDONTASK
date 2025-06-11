@@ -1,6 +1,4 @@
-package basic.to.intermediate;
 
-public class Q02_SimpleInterest {
 	
 	/**
 	 * Write a Java program to calculate Simple Interest using the formula:
@@ -28,4 +26,13 @@ public class Q02_SimpleInterest {
 		Simple Interest = 1000.00
 	 */
 
+public class SimpleInterest 
+{
+    public static void main(String[] args) 
+	{
+        double principal = 1000, rate = 5, time = 2;
+        double interest = (principal * rate * time) / 100;
+        System.out.println("Simple Interest: " + interest);
+    }
 }
+
