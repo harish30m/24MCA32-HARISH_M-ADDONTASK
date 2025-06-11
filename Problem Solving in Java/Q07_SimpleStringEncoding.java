@@ -1,7 +1,23 @@
-package basic.to.intermediate;
+import java.util.Scanner;
 
-public class Q07_SimpleStringEncoding {
-	
+public class StringEncoder 
+{
+    public static void main(String[] args) 
+	{
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a string: ");
+        String input = scanner.nextLine();
+        StringBuilder encoded = new StringBuilder();
+
+        for (char c : input.toCharArray()) 
+	{
+            encoded.append((char)(c + 1)); 
+        }
+
+        System.out.println("Encoded String: " + encoded);
+    }
+}
+
 	/**
 	 * This program reads a five-letter word from the user and encodes 
 	 it by subtracting 1 from the ASCII value of each character. 
@@ -20,4 +36,4 @@ public class Q07_SimpleStringEncoding {
 	Encoded Word: vghsd
 	 */
 
-}
+
