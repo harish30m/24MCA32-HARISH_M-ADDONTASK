@@ -1,6 +1,21 @@
-package basic.to.intermediate;
+import java.util.Scanner;
 
-public class Q02_SimpleInterest {
+public class SimpleInterest 
+{
+    public static void main(String[] args) 
+	{
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter Principal: ");
+        double principal = scanner.nextDouble();
+        System.out.print("Enter Rate of Interest: ");
+        double rate = scanner.nextDouble();
+        System.out.print("Enter Time in years: ");
+        double time = scanner.nextDouble();
+        double interest = (principal * rate * time) / 100;
+        System.out.println("Simple Interest: " + interest);
+    }
+}
+
 	
 	/**
 	 * Write a Java program to calculate Simple Interest using the formula:
@@ -28,4 +43,3 @@ public class Q02_SimpleInterest {
 		Simple Interest = 1000.00
 	 */
 
-}
